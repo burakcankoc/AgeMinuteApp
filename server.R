@@ -30,7 +30,7 @@ server <- function(input, output, session) {
                               html_table() %>%
                               pluck(1) %>%
                               row_to_names(row_number = 1) %>%
-                              select(1:10) %>%
+                              select(1:8) %>%
                               mutate(
                                 Team = gsub(
                                   basename(url),
